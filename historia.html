@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia | Gossip Girl</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER (igual que la Home) ============ -->
+  <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="img/logo.jpg" alt="Gossip Girl" class="header__logo-img">
+      </a>
+    </div>
+
+    <div class="header__bottom">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">HOME</a></li>
+          <li><a href="historia.html" class="nav__link nav__link--active">HISTORIA</a></li>
+          <li><a href="personajes.html" class="nav__link">PERSONAJES</a></li>
+          <li><a href="lugares.html" class="nav__link">LUGARES</a></li>
+          <li><a href="escenas.html" class="nav__link">ESCENAS</a></li>
+          <li><a href="galeria.html" class="nav__link">GALERÍA</a></li>
+          <li><a href="contacto.html" class="nav__link">CONTACTO</a></li>
+        </ul>
+
+        <a href="#" class="nav__favorite" aria-label="Favoritos">&#9825;</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HISTORIA - CONTENIDO PRINCIPAL ============ -->
+  <main class="historia-page">
+    <div class="historia-container">
+      <div class="historia-grid">
+
+        <!-- COLUMNA IZQUIERDA -->
+        <div class="historia-grid__col historia-grid__col--left">
+
+          <!-- Línea de tiempo -->
+          <div class="timeline">
+            <div class="timeline__track">
+              <div class="timeline__item">
+                <span class="timeline__year">2002</span>
+                <span class="timeline__dot"></span>
+                <span class="timeline__label">Nace Gossip Girl</span>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__year">2007</span>
+                <span class="timeline__dot"></span>
+                <span class="timeline__label">Llega a la televisión</span>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__year">2012</span>
+                <span class="timeline__dot"></span>
+                <span class="timeline__label">Final de la serie</span>
+              </div>
+            </div>
+            <p class="timeline__note">Suceden las seis temporadas</p>
+          </div>
+
+          <!-- Imagen del elenco -->
+          <img src="img/segunda-pag.jpg" alt="Elenco de Gossip Girl" class="historia-imagen">
+
+          <!-- Botones -->
+          <div class="historia-links">
+            <a href="temporadas.html" class="btn">Temporadas</a>
+            <a href="creadores.html" class="btn">Creadores y producción</a>
+          </div>
+
+        </div>
+
+        <!-- COLUMNA DERECHA -->
+        <div class="historia-grid__col historia-grid__col--right">
+          <div class="historia-texto">
+            <h1 class="intro__title">De las novelas al Upper East Side...</h1>
+            <p class="historia-texto__subtitle">El origen y la evolución de una de las series juveniles más recordadas de los años 2000.</p>
+
+            <p>Gossip Girl nació a partir de la serie de novelas juveniles escritas por Cecily von Ziegesar, cuyo primer libro fue publicado en 2002. Años más tarde, la historia fue adaptada para televisión por Josh Schwartz y Stephanie Savage, y se estrenó en 2007.</p>
+
+            <p>La serie sigue la vida de un grupo de jóvenes de la élite de Manhattan, principalmente del Upper East Side, mientras atraviesan romances, amistades, rivalidades y conflictos familiares. A lo largo de seis temporadas, los personajes crecen y pasan de la adolescencia a la vida adulta, siempre bajo la mirada de Gossip Girl, una figura anónima que publica sus secretos y escándalos.</p>
+
+            <p>La serie finalizó en 2012, luego de seis temporadas y 121 episodios, y se convirtió en una de las producciones juveniles más representativas de su época.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER (igual que la Home) ============ -->
+  <footer class="footer">
+    <p class="footer__line">&copy; 2026 Gossip Girl. Sitio realizado con fines académicos.</p>
+    <p class="footer__xoxo">XOXO</p>
+  </footer>
+
+</body>
+</html>
