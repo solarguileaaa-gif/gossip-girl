@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Gossip Girl</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+ <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Gossip Girl" class="header__logo-img">
+      </a>
+    </div>
+
+    <div class="header__bottom">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">HOME</a></li>
+          <li><a href="historia.html" class="nav__link">HISTORIA</a></li>
+          <li><a href="personajes.html" class="nav__link">PERSONAJES</a></li>
+          <li><a href="lugares.html" class="nav__link">LUGARES</a></li>
+          <li><a href="escenas.html" class="nav__link">ESCENAS</a></li>
+          <li><a href="galeria.html" class="nav__link">GALERÍA</a></li>
+          <li><a href="contacto.html" class="nav__link nav__link--active">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav__tools">
+      <div class="buscador">
+        <input type="text" id="buscar" class="buscador__input" placeholder="Buscar..." autocomplete="off">
+        <ul id="resultados" class="buscador__resultados"></ul>
+      </div>
+      <a href="#" class="nav__favorite" aria-label="Favoritos">&#9825;</a>
+    </div>
+  </header>
+
+  <main class="contacto-page page-base">
+
+    <h1 class="personajes-page__title">Contacto</h1>
+
+    <form class="contacto-form" action="#">
+
+      <div class="contacto-field">
+        <label for="nombre" class="contacto-label">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" class="contacto-input" required>
+      </div>
+
+      <div class="contacto-field">
+        <label for="email" class="contacto-label">Email:</label>
+        <input type="email" id="email" name="email" class="contacto-input" required>
+      </div>
+
+      <div class="contacto-field">
+        <label for="asunto" class="contacto-label">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" class="contacto-input" required>
+      </div>
+
+      <div class="contacto-field">
+        <label for="mensaje" class="contacto-label">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" class="contacto-textarea" rows="6" required></textarea>
+      </div>
+
+      <button type="submit" class="contacto-submit">Enviar</button>
+
+    </form>
+
+    <div class="contacto-confirmation" id="contactoConfirmation" hidden>
+  <button type="button" class="contacto-confirmation__close" id="contactoConfirmationClose" aria-label="Cerrar">&times;</button>
+  <p class="contacto-confirmation__title">Mensaje enviado</p>
+  <p class="contacto-confirmation__text">Gracias por escribirnos. Te responderemos a la brevedad — XOXO.</p>
+</div>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__line">&copy; 2026 Gossip Girl. Sitio realizado por Sol Arguilea con fines académicos.</p>
+    <p class="footer__xoxo">XOXO</p>
+  </footer>
+<script src="js/buscador.js"></script>
+<script src="contacto.js"></script>
+<script src="js/favoritos.js"></script>
+</body>
+</html>

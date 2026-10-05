@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugares | Gossip Girl</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+ <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Gossip Girl" class="header__logo-img">
+      </a>
+    </div>
+
+    <div class="header__bottom">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">HOME</a></li>
+          <li><a href="historia.html" class="nav__link">HISTORIA</a></li>
+          <li><a href="personajes.html" class="nav__link">PERSONAJES</a></li>
+          <li><a href="lugares.html" class="nav__link nav__link--active">LUGARES</a></li>
+          <li><a href="escenas.html" class="nav__link">ESCENAS</a></li>
+          <li><a href="galeria.html" class="nav__link">GALERÍA</a></li>
+          <li><a href="contacto.html" class="nav__link">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav__tools">
+      <div class="buscador">
+        <input type="text" id="buscar" class="buscador__input" placeholder="Buscar..." autocomplete="off">
+        <ul id="resultados" class="buscador__resultados"></ul>
+      </div>
+      <a href="#" class="nav__favorite" aria-label="Favoritos">&#9825;</a>
+    </div>
+  </header>
+
+  <main class="lugares-page page-base">
+    <h1 class="personajes-page__title">Lugares icónicos</h1>
+    <p class="personajes-intro">Desde las escaleras del Met hasta los hoteles más exclusivos de Manhattan, Nueva York forma parte esencial del universo de Gossip Girl.</p>
+    <section class="mapa-section">
+      <div class="mapa-container" id="mapaContainer">
+
+        <img src="img/mapa-gossip-girl.png" alt="Mapa de lugares icónicos de Gossip Girl" class="mapa-imagen">
+
+<button type="button" class="mapa-hotspot" style="top: 8.3%; left: 43.0%;" data-title="Central Park" data-desc="Escenario frecuente de paseos, encuentros casuales, conversaciones íntimas y momentos románticos." data-image="img/central-park.jpg" aria-label="Central Park"></button>
+<button type="button" class="mapa-hotspot" style="top: 16.9%; left: 45.9%;" data-title="Metropolitan Museum of Art" data-desc="Utilizado como exterior de Constance Billard y St. Jude’s, las escuelas de varios protagonistas" data-image="img/museum-ny.jpg" aria-label="Museum of the City of New York"></button>
+<button type="button" class="mapa-hotspot" style="top: 23.9%; left: 45.3%;" data-title="The Met Steps" data-desc="Punto de encuentro de Blair y su grupo, donde se reúnen antes de clases y se marcan muchas de las jerarquías sociales de la serie." data-image="img/met-steps.jpg" aria-label="The Met Steps"></button>
+<button type="button" class="mapa-hotspot" style="top: 36.5%; left: 39.0%;" data-title="Bethesda Terrace" data-desc="Uno de los rincones más elegantes de Central Park, utilizado para escenas memorables y visualmente sofisticadas." data-image="img/bethesda-terrace.jpg" aria-label="Bethesda Terrace"></button>
+<button type="button" class="mapa-hotspot" style="top: 49.3%; left: 30%;" data-title="Empire Hotel" data-desc="Propiedad de Chuck Bass y uno de los lugares más representativos de su vida adulta y sus negocios." data-image="img/hotel-empire.jpg" aria-label="Empire Hotel"></button>
+<button type="button" class="mapa-hotspot" style="top: 71.2%; left: 51.5%;" data-title="Grand Central Terminal" data-desc="Lugar donde Serena regresa a Nueva York al comienzo de la serie, marcando el inicio de una nueva etapa para los personajes." data-image="img/grand-central.jpg" aria-label="Grand Central Terminal"></button>
+<button type="button" class="mapa-hotspot" style="top: 79.5%; left: 40.4%;" data-title="Empire State Building" data-desc="Lugar emblemático dentro de la relación de Chuck y Blair, asociado a uno de sus momentos más recordados." data-image="img/empire-state.jpg" aria-label="Empire State Building"></button>
+<button type="button" class="mapa-hotspot" style="top: 66%; left: 50%;" data-title="The Palace Hotel" data-desc="Hotel vinculado a la familia van der Woodsen y escenario de encuentros, conflictos y momentos importantes." data-image="img/palace-hotel.jpg" aria-label="The Palace Hotel"></button>
+<button type="button" class="mapa-hotspot" style="top: 85.4%; left: 74.3%;" data-title="Brooklyn" data-desc="Representa el entorno de Dan y la familia Humphrey, en contraste con el lujo del Upper East Side." data-image="img/brooklyn.jpg" aria-label="DUMBO / Brooklyn"></button>
+<button type="button" class="mapa-hotspot" style="top: 30%; left: 50%;" data-title="Upper East Side" data-desc="El corazón del universo de Gossip Girl: lujo, privilegio, secretos, romances y rivalidades de la élite neoyorquina." data-image="img/upper-east-side.jpg" aria-label="Upper East Side"></button>
+<div class="flashcard" id="flashcard" hidden>
+  <button type="button" class="flashcard__close" id="flashcardClose" aria-label="Cerrar">&times;</button>
+  <button class="fav-btn" id="favLugar" data-tipo="Lugar" aria-label="Agregar a favoritos">♡</button>
+  <div class="flashcard-video" id="flashcardVideo"></div>
+  <img class="flashcard-image" id="flashcardImage" alt="" hidden>
+  <h3 class="flashcard-title" id="flashcardTitle"></h3>
+  <p class="flashcard-text" id="flashcardText"></p>
+</div>
+      </div>
+    </section>
+    <p class="personajes-intro">El lujo, la arquitectura y la vida social de Manhattan construyen gran parte de la identidad de Gossip Girl.</p>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__line">&copy; 2026 Gossip Girl. Sitio realizado por Sol Arguilea con fines académicos.</p>
+    <p class="footer__xoxo">XOXO</p>
+  </footer>
+
+  <script src="lugares.js"></script>
+<script src="js/buscador.js"></script>
+<script src="js/favoritos.js"></script>
+<script>
+  const favLugar = document.getElementById("favLugar");
+
+  document.querySelectorAll(".mapa-hotspot").forEach(punto => {
+    punto.addEventListener("click", () => {
+      favLugar.dataset.id = "lugar-" + punto.dataset.title.toLowerCase().replace(/\s+/g, "-");
+      favLugar.dataset.nombre = punto.dataset.title;
+      favLugar.dataset.img = punto.dataset.image;
+
+      const esFav = getFavoritos().some(f => f.id === favLugar.dataset.id);
+      favLugar.classList.toggle("is-fav", esFav);
+      favLugar.textContent = esFav ? "♥" : "♡";
+    });
+  });
+</script>
+</body>
+</html>

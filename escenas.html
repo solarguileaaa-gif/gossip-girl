@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escenas | Gossip Girl</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Gossip Girl" class="header__logo-img">
+      </a>
+    </div>
+
+    <div class="header__bottom">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">HOME</a></li>
+          <li><a href="historia.html" class="nav__link">HISTORIA</a></li>
+          <li><a href="personajes.html" class="nav__link">PERSONAJES</a></li>
+          <li><a href="lugares.html" class="nav__link">LUGARES</a></li>
+          <li><a href="escenas.html" class="nav__link nav__link--active">ESCENAS</a></li>
+          <li><a href="galeria.html" class="nav__link">GALERÍA</a></li>
+          <li><a href="contacto.html" class="nav__link">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav__tools">
+      <div class="buscador">
+        <input type="text" id="buscar" class="buscador__input" placeholder="Buscar..." autocomplete="off">
+        <ul id="resultados" class="buscador__resultados"></ul>
+      </div>
+      <a href="#" class="nav__favorite" aria-label="Favoritos">&#9825;</a>
+    </div>
+  </header>
+
+  <main class="escenas-page page-base">
+
+    <h1 class="personajes-page__title">Escenas icónicas</h1>
+
+    <p class="personajes-intro">Romances, secretos, traiciones y encuentros que quedaron para siempre en la historia de Gossip Girl.</p>
+
+    <div class="spoiler-warning" id="spoilerWarning">
+      <p class="spoiler-warning__title">WARNING</p>
+      <p class="spoiler-warning__text">Esta página contiene spoilers...</p>
+      <p class="spoiler-warning__question">¿Desea continuar?</p>
+      <button type="button" class="spoiler-button" id="spoilerButton">Sí, continuar</button>
+    </div>
+        <section id="spoiler-content" class="spoiler-content spoilers-hidden">
+
+      <div class="escena-item">
+        <button type="button" class="escena-video" data-video="videos/regreso-serena.mp4" aria-label="Reproducir: El regreso de Serena">
+          <img src="img/poster-serena.jpg" alt="El regreso de Serena" class="escena-img">
+          <span class="escena-video__play" aria-hidden="true">&#9654;</span>
+        </button>
+        <div class="escena-info">
+          <h2 class="escena-title">El regreso de Serena</h2>
+          <p class="escena-season">Temporada 1</p>
+          <p class="escena-description">La llegada de Serena van der Woodsen a Grand Central marca el comienzo de la historia. Después de haberse alejado misteriosamente de Manhattan, su regreso altera la vida del Upper East Side y vuelve a conectar amistades, romances y secretos del pasado.</p>
+        </div>
+        <button class="fav-btn" data-id="escena-regreso-serena" data-tipo="Escena" data-nombre="El regreso de Serena" data-img="img/poster-serena.jpg" aria-label="Agregar a favoritos">♡</button>
+      </div>
+
+      <div class="escena-item">
+        <button type="button" class="escena-video" data-video="videos/blair-chuck-victrola.mp4" aria-label="Reproducir: Blair y Chuck en Victrola">
+          <img src="img/poster-victrola.jpg" alt="Blair y Chuck en Victrola" class="escena-img">
+          <span class="escena-video__play" aria-hidden="true">&#9654;</span>
+        </button>
+        <div class="escena-info">
+          <h2 class="escena-title">Blair y Chuck en Victrola</h2>
+          <p class="escena-season">Temporada 1</p>
+          <p class="escena-description">Uno de los primeros momentos que transforma por completo la relación entre Blair y Chuck. La noche en Victrola muestra una faceta diferente de ambos personajes y da comienzo a una de las historias más importantes de toda la serie.</p>
+        </div>
+        <button class="fav-btn" data-id="escena-victrola" data-tipo="Escena" data-nombre="Blair y Chuck en Victrola" data-img="img/poster-victrola.jpg" aria-label="Agregar a favoritos">♡</button>
+      </div>
+
+      <div class="escena-item">
+        <button type="button" class="escena-video" data-video="videos/boda-blair-chuck.mp4" aria-label="Reproducir: La boda de Blair y Chuck">
+          <img src="img/poster-boda.jpg" alt="La boda de Blair y Chuck" class="escena-img">
+          <span class="escena-video__play" aria-hidden="true">&#9654;</span>
+        </button>
+        <div class="escena-info">
+          <h2 class="escena-title">La boda de Blair y Chuck</h2>
+          <p class="escena-season">Temporada 6</p>
+          <p class="escena-description">Después de años de encuentros, separaciones, decisiones difíciles y secretos, Blair y Chuck finalmente llegan a uno de los momentos más esperados de la serie, cerrando uno de sus principales arcos románticos.</p>
+        </div>
+        <button class="fav-btn" data-id="escena-boda" data-tipo="Escena" data-nombre="La boda de Blair y Chuck" data-img="img/poster-boda.jpg" aria-label="Agregar a favoritos">♡</button>
+      </div>
+
+      <div class="escena-item">
+        <button type="button" class="escena-video" data-video="videos/identidad-gossip-girl.mp4" aria-label="Reproducir: La identidad de Gossip Girl">
+          <img src="img/poster-final.jpg" alt="La identidad de Gossip Girl" class="escena-img">
+          <span class="escena-video__play" aria-hidden="true">&#9654;</span>
+        </button>
+        <div class="escena-info">
+          <h2 class="escena-title">La identidad de Gossip Girl</h2>
+          <p class="escena-season">Final de la serie</p>
+          <p class="escena-description">Después de seis temporadas siguiendo rumores, mensajes anónimos y secretos de la élite de Manhattan, finalmente se revela quién estuvo detrás de Gossip Girl, cambiando la interpretación de muchos acontecimientos anteriores.</p>
+        </div>
+        <button class="fav-btn" data-id="escena-identidad" data-tipo="Escena" data-nombre="La identidad de Gossip Girl" data-img="img/poster-final.jpg" aria-label="Agregar a favoritos">♡</button>
+      </div>
+
+    </section>
+  </main>
+
+  <div class="video-modal" id="videoModal" hidden>
+    <div class="video-modal__overlay" id="videoModalOverlay"></div>
+    <div class="video-modal__box">
+      <button type="button" class="video-modal__close" id="videoModalClose" aria-label="Cerrar">&times;</button>
+      <video id="videoModalPlayer" class="video-modal__video" controls playsinline></video>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <p class="footer__line">&copy; 2026 Gossip Girl. Sitio realizado por Sol Arguilea con fines académicos.</p>
+    <p class="footer__xoxo">XOXO</p>
+  </footer>
+
+  <script src="escenas.js"></script>
+  <script src="js/buscador.js"></script>
+  <script src="js/favoritos.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | Gossip Girl</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Gossip Girl" class="header__logo-img">
+      </a>
+    </div>
+
+    <div class="header__bottom">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">HOME</a></li>
+          <li><a href="historia.html" class="nav__link">HISTORIA</a></li>
+          <li><a href="personajes.html" class="nav__link">PERSONAJES</a></li>
+          <li><a href="lugares.html" class="nav__link">LUGARES</a></li>
+          <li><a href="escenas.html" class="nav__link">ESCENAS</a></li>
+          <li><a href="galeria.html" class="nav__link nav__link--active">GALERÍA</a></li>
+          <li><a href="contacto.html" class="nav__link">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav__tools">
+      <div class="buscador">
+        <input type="text" id="buscar" class="buscador__input" placeholder="Buscar..." autocomplete="off">
+        <ul id="resultados" class="buscador__resultados"></ul>
+      </div>
+      <a href="#" class="nav__favorite" aria-label="Favoritos">&#9825;</a>
+    </div>
+  </header>
+
+
+  <main class="galeria-page page-base">
+
+ <h1 class="personajes-page__title">Galería</h1>
+
+<div class="galeria-grid">
+
+  <div class="galeria-card">
+    <button type="button" class="galeria-item" data-full="img/poster-final.jpg" aria-label="Ampliar imagen 1">
+      <img src="img/poster-final.jpg" alt="" class="galeria-img galeria-img--1">
+    </button>
+    <button class="fav-btn" data-id="foto-1" data-tipo="Foto" data-nombre="Foto 1" data-img="img/poster-final.jpg" aria-label="Agregar a favoritos">♡</button>
+  </div>
+
+  <div class="galeria-card">
+    <button type="button" class="galeria-item" data-full="img/poster-serena.jpg" aria-label="Ampliar imagen 2">
+      <img src="img/poster-serena.jpg" alt="" class="galeria-img galeria-img--2">
+    </button>
+    <button class="fav-btn" data-id="foto-2" data-tipo="Foto" data-nombre="Foto 2" data-img="img/poster-serena.jpg" aria-label="Agregar a favoritos">♡</button>
+  </div>
+
+  <div class="galeria-card">
+    <button type="button" class="galeria-item" data-full="img/poster-victrola.jpg" aria-label="Ampliar imagen 3">
+      <img src="img/poster-victrola.jpg" alt="" class="galeria-img galeria-img--3">
+    </button>
+    <button class="fav-btn" data-id="foto-3" data-tipo="Foto" data-nombre="Foto 3" data-img="img/poster-victrola.jpg" aria-label="Agregar a favoritos">♡</button>
+  </div>
+
+  <div class="galeria-card">
+    <button type="button" class="galeria-item" data-full="img/segunda-pag.jpg" aria-label="Ampliar imagen 4">
+      <img src="img/segunda-pag.jpg" alt="" class="galeria-img galeria-img--4">
+    </button>
+    <button class="fav-btn" data-id="foto-4" data-tipo="Foto" data-nombre="Foto 4" data-img="img/segunda-pag.jpg" aria-label="Agregar a favoritos">♡</button>
+  </div>
+
+  <div class="galeria-card">
+    <button type="button" class="galeria-item" data-full="img/temp1.jpg" aria-label="Ampliar imagen 5">
+      <img src="img/temp1.jpg" alt="" class="galeria-img galeria-img--5">
+    </button>
+    <button class="fav-btn" data-id="foto-5" data-tipo="Foto" data-nombre="Foto 5" data-img="img/temp1.jpg" aria-label="Agregar a favoritos">♡</button>
+  </div>
+
+  <div class="galeria-card">
+    <button type="button" class="galeria-item" data-full="img/temp2.jpg" aria-label="Ampliar imagen 6">
+      <img src="img/temp2.jpg" alt="" class="galeria-img galeria-img--6">
+    </button>
+    <button class="fav-btn" data-id="foto-6" data-tipo="Foto" data-nombre="Foto 6" data-img="img/temp2.jpg" aria-label="Agregar a favoritos">♡</button>
+  </div>
+
+  <div class="galeria-card">
+    <button type="button" class="galeria-item" data-full="img/temp3.jpg" aria-label="Ampliar imagen 7">
+      <img src="img/temp3.jpg" alt="" class="galeria-img galeria-img--7">
+    </button>
+    <button class="fav-btn" data-id="foto-7" data-tipo="Foto" data-nombre="Foto 7" data-img="img/temp3.jpg" aria-label="Agregar a favoritos">♡</button>
+  </div>
+
+  <div class="galeria-card">
+    <button type="button" class="galeria-item" data-full="img/temp4.png" aria-label="Ampliar imagen 8">
+      <img src="img/temp4.png" alt="" class="galeria-img galeria-img--8">
+    </button>
+    <button class="fav-btn" data-id="foto-8" data-tipo="Foto" data-nombre="Foto 8" data-img="img/temp4.png" aria-label="Agregar a favoritos">♡</button>
+  </div>
+
+  <div class="galeria-card">
+    <button type="button" class="galeria-item" data-full="img/temp5.jpg" aria-label="Ampliar imagen 9">
+      <img src="img/temp5.jpg" alt="" class="galeria-img galeria-img--9">
+    </button>
+    <button class="fav-btn" data-id="foto-9" data-tipo="Foto" data-nombre="Foto 9" data-img="img/temp5.jpg" aria-label="Agregar a favoritos">♡</button>
+  </div>
+
+</div>
+  </main>
+
+  <div class="galeria-lightbox" id="galeriaLightbox" hidden>
+    <div class="galeria-lightbox__overlay" id="galeriaLightboxOverlay"></div>
+    <button type="button" class="galeria-lightbox__close" id="galeriaLightboxClose" aria-label="Cerrar">&times;</button>
+    <img src="" alt="" class="galeria-lightbox__image" id="galeriaLightboxImage">
+  </div>
+
+  <!-- ============ FOOTER (igual que el resto del sitio) ============ -->
+  <footer class="footer">
+    <p class="footer__line">&copy; 2026 Gossip Girl. Sitio realizado por Sol Arguilea con fines académicos.</p>
+    <p class="footer__xoxo">XOXO</p>
+  </footer>
+
+  <script src="galeria.js"></script>
+  <script src="js/buscador.js"></script>
+  <script src="js/favoritos.js"></script>
+</body>
+</html>

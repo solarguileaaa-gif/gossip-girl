@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis favoritos | Gossip Girl</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Gossip Girl" class="header__logo-img">
+      </a>
+    </div>
+    <div class="header__bottom">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">HOME</a></li>
+          <li><a href="historia.html" class="nav__link">HISTORIA</a></li>
+          <li><a href="personajes.html" class="nav__link">PERSONAJES</a></li>
+          <li><a href="lugares.html" class="nav__link">LUGARES</a></li>
+          <li><a href="escenas.html" class="nav__link">ESCENAS</a></li>
+          <li><a href="galeria.html" class="nav__link">GALERÍA</a></li>
+          <li><a href="contacto.html" class="nav__link">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav__tools">
+      <div class="buscador">
+        <input type="text" id="buscar" class="buscador__input" placeholder="Buscar..." autocomplete="off">
+        <ul id="resultados" class="buscador__resultados"></ul>
+      </div>
+      <a href="#" class="nav__favorite" aria-label="Favoritos">&#9825;</a>
+    </div>
+  </header>
+
+  <main class="page-base">
+    <h1 class="personajes-page__title">Mis favoritos</h1>
+    <div id="favoritos-lista" class="favoritos-grid"></div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__line">&copy; 2026 Gossip Girl. Sitio realizado con fines académicos.</p>
+    <p class="footer__xoxo">XOXO</p>
+  </footer>
+
+  <script src="js/favoritos.js"></script>
+  <script src="js/buscador.js"></script>
+  <script>
+    const lista = document.getElementById("favoritos-lista");
+
+    function mostrarFavoritos() {
+      lista.innerHTML = "";
+
+      if (!usuarioActual()) {
+        lista.innerHTML = '<p class="favoritos-vacio">Iniciá sesión para ver tus favoritos.</p>';
+        abrirLogin();
+        return;
+      }
+
+      const favs = getFavoritos();
+      if (!favs.length) {
+        lista.innerHTML = '<p class="favoritos-vacio">Todavía no tenés favoritos... ♡</p>';
+        return;
+      }
+
+      favs.forEach(f => {
+        const card = document.createElement("div");
+        card.className = "fav-card";
+        card.innerHTML = `
+          <a href="${f.url}"><img src="${f.img}" alt="${f.nombre}" class="fav-card__img"></a>
+          <p class="fav-card__tipo">${f.tipo}</p>
+          <p class="fav-card__nombre">${f.nombre}</p>
+          <button class="fav-card__quitar">Quitar</button>`;
+        card.querySelector("button").onclick = () => { toggleFavorito(f); mostrarFavoritos(); };
+        lista.appendChild(card);
+      });
+    }
+
+    mostrarFavoritos();
+  </script>
+</body>
+</html>

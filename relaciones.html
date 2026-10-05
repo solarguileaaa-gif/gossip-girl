@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de relaciones | Gossip Girl</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+ <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Gossip Girl" class="header__logo-img">
+      </a>
+    </div>
+
+    <div class="header__bottom">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">HOME</a></li>
+          <li><a href="historia.html" class="nav__link">HISTORIA</a></li>
+          <li><a href="personajes.html" class="nav__link">PERSONAJES</a></li>
+          <li><a href="lugares.html" class="nav__link">LUGARES</a></li>
+          <li><a href="escenas.html" class="nav__link">ESCENAS</a></li>
+          <li><a href="galeria.html" class="nav__link">GALERÍA</a></li>
+          <li><a href="contacto.html" class="nav__link">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav__tools">
+      <div class="buscador">
+        <input type="text" id="buscar" class="buscador__input" placeholder="Buscar..." autocomplete="off">
+        <ul id="resultados" class="buscador__resultados"></ul>
+      </div>
+      <a href="#" class="nav__favorite" aria-label="Favoritos">&#9825;</a>
+    </div>
+  </header>
+
+
+  <main class="mapa-relaciones-page page-base">
+
+    <h1 class="personajes-page__title">Mapa de relaciones</h1>
+
+    <div class="mapa-relaciones-container">
+
+      <!-- Imagen principal -->
+      <img src="img/mapa-relaciones.jpeg" alt="Mapa de relaciones de los personajes de Gossip Girl" class="mapa-relaciones-image">
+
+      <!-- Leyenda -->
+      <div class="mapa-relaciones-legend">
+        <div class="mapa-relaciones-legend-item">
+          <span class="mapa-relaciones-dot mapa-relaciones-dot--romance"></span>
+          <span>Romance</span>
+        </div>
+        <div class="mapa-relaciones-legend-item">
+          <span class="mapa-relaciones-dot mapa-relaciones-dot--casamiento"></span>
+          <span>Casamiento</span>
+        </div>
+        <div class="mapa-relaciones-legend-item">
+          <span class="mapa-relaciones-dot mapa-relaciones-dot--intimidad"></span>
+          <span>Intimidad</span>
+        </div>
+        <div class="mapa-relaciones-legend-item">
+          <span class="mapa-relaciones-dot mapa-relaciones-dot--cita"></span>
+          <span>Cita casual</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__line">&copy; 2026 Gossip Girl. Sitio realizado por Sol Arguilea con fines académicos.</p>
+    <p class="footer__xoxo">XOXO</p>
+  </footer>
+<script src="js/buscador.js"></script>
+<script src="js/favoritos.js"></script>
+</body>
+</html>

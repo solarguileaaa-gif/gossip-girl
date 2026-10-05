@@ -13,11 +13,10 @@
 </head>
 <body>
 
-
  <header class="header">
     <div class="header__logo">
       <a href="index.html">
-        <img src="img/logo.jpg" alt="Gossip Girl" class="header__logo-img">
+        <img src="img/logo.png" alt="Gossip Girl" class="header__logo-img">
       </a>
     </div>
 
@@ -32,12 +31,17 @@
           <li><a href="galeria.html" class="nav__link">GALERÍA</a></li>
           <li><a href="contacto.html" class="nav__link">CONTACTO</a></li>
         </ul>
-
-        <a href="#" class="nav__favorite" aria-label="Favoritos">&#9825;</a>
       </nav>
     </div>
-  </header>
 
+    <div class="nav__tools">
+      <div class="buscador">
+        <input type="text" id="buscar" class="buscador__input" placeholder="Buscar..." autocomplete="off">
+        <ul id="resultados" class="buscador__resultados"></ul>
+      </div>
+      <a href="#" class="nav__favorite" aria-label="Favoritos">&#9825;</a>
+    </div>
+  </header>
 
   <section class="hero">
     <img src="img/imagen-ny.jpg" alt="Skyline nocturno de Manhattan" class="hero__img">
@@ -64,10 +68,56 @@
     </div>
   </section>
 
+<section class="home-cards">
+
+  <div class="home-card" tabindex="0">
+    <div class="home-card__inner">
+      <div class="home-card__front">
+        <p class="home-card__title">PERSONAJES</p>
+        <img src="img/personajes.png" alt="" class="home-card__icon">
+      </div>
+      <div class="home-card__back">
+        <img src="img/segunda-pag.jpg" alt="" class="home-card__back-img">
+        <p class="home-card__title">PERSONAJES</p>
+        <a href="personajes.html" class="home-card__button">VER</a>
+</div>
+    </div>
+  </div>
+
+  <div class="home-card" tabindex="0">
+    <div class="home-card__inner">
+      <div class="home-card__front">
+        <p class="home-card__title">LUGARES</p>
+        <img src="img/lugares.png" alt="" class="home-card__icon">
+      </div>
+      <div class="home-card__back">
+        <img src="img/central-park.jpg" alt="" class="home-card__back-img">
+        <p class="home-card__title">PERSONAJES</p>
+        <a href="lugares.html" class="home-card__button">VER</a>
+</div>
+    </div>
+  </div>
+
+  <div class="home-card" tabindex="0">
+    <div class="home-card__inner">
+      <div class="home-card__front">
+        <p class="home-card__title">ESCENAS</p>
+        <img src="img/escenas.png" alt="" class="home-card__icon">
+      </div>
+      <div class="home-card__back">
+        <img src="img/met-steps.jpg" alt="" class="home-card__back-img">
+        <p class="home-card__title">PERSONAJES</p>
+        <a href="escenas.html" class="home-card__button">VER</a>
+</div>
+    </div>
+  </div>
+
+</section>
   <footer class="footer">
-    <p class="footer__line">&copy; 2026 Gossip Girl. Sitio realizado con fines académicos.</p>
+    <p class="footer__line">&copy; 2026 Gossip Girl. Sitio realizado por Sol Arguilea con fines académicos.</p>
     <p class="footer__xoxo">XOXO</p>
   </footer>
-
+<script src="js/buscador.js"></script>
+<script src="js/favoritos.js"></script>
 </body>
 </html>

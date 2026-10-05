@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporadas | Gossip Girl</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+ <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Gossip Girl" class="header__logo-img">
+      </a>
+    </div>
+
+    <div class="header__bottom">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">HOME</a></li>
+          <li><a href="historia.html" class="nav__link">HISTORIA</a></li>
+          <li><a href="personajes.html" class="nav__link">PERSONAJES</a></li>
+          <li><a href="lugares.html" class="nav__link">LUGARES</a></li>
+          <li><a href="escenas.html" class="nav__link">ESCENAS</a></li>
+          <li><a href="galeria.html" class="nav__link">GALERÍA</a></li>
+          <li><a href="contacto.html" class="nav__link">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav__tools">
+      <div class="buscador">
+        <input type="text" id="buscar" class="buscador__input" placeholder="Buscar..." autocomplete="off">
+        <ul id="resultados" class="buscador__resultados"></ul>
+      </div>
+      <a href="#" class="nav__favorite" aria-label="Favoritos">&#9825;</a>
+    </div>
+  </header>
+
+  <main class="temporadas-page page-base">
+
+    <h1 class="personajes-page__title temporadas-page__title">Temporadas</h1>
+    <p class="temporadas-page__subtitle">Seis años de secretos en el Upper East Side</p>
+
+            <div class="temporadas-grid">
+
+      <div class="temporada-card" tabindex="0">
+        <div class="temporada-card__inner">
+          <div class="temporada-card__front">
+            <img src="img/temp1.jpg" alt="Temporada 1" class="temporada-card__image">
+            <div class="temporada-card__caption">
+              <h2 class="temporada-card__title">Temporada 1</h2>
+              <p class="temporada-card__meta">2007–2008 · 18 episodios</p>
+            </div>
+          </div>
+          <div class="temporada-card__back">
+            <p class="temporada-card__title">Temporada 1</p>
+            <p class="temporada-card__meta">2007–2008 · 18 episodios</p>
+            <p class="temporada-card__description">El regreso de Serena al Upper East Side vuelve a reunir al grupo y saca a la luz antiguos conflictos, romances y secretos que marcarán el comienzo de la historia.</p>
+          </div>
+        </div>
+        <button class="fav-btn" data-id="temporada-1" data-tipo="Temporada" data-nombre="Temporada 1" data-img="img/temp1.jpg" aria-label="Agregar a favoritos">♡</button>
+      </div>
+
+      <div class="temporada-card" tabindex="0">
+        <div class="temporada-card__inner">
+          <div class="temporada-card__front">
+            <img src="img/temp2.jpg" alt="Temporada 2" class="temporada-card__image">
+            <div class="temporada-card__caption">
+              <h2 class="temporada-card__title">Temporada 2</h2>
+              <p class="temporada-card__meta">2008–2009 · 25 episodios</p>
+            </div>
+          </div>
+          <div class="temporada-card__back">
+            <p class="temporada-card__title">Temporada 2</p>
+            <p class="temporada-card__meta">2008–2009 · 25 episodios</p>
+            <p class="temporada-card__description">Las relaciones y rivalidades se intensifican mientras los protagonistas atraviesan su último año de colegio y comienzan a tomar decisiones sobre su futuro.</p>
+          </div>
+        </div>
+        <button class="fav-btn" data-id="temporada-2" data-tipo="Temporada" data-nombre="Temporada 2" data-img="img/temp2.jpg" aria-label="Agregar a favoritos">♡</button>
+      </div>
+
+      <div class="temporada-card" tabindex="0">
+        <div class="temporada-card__inner">
+          <div class="temporada-card__front">
+            <img src="img/temp3.jpg" alt="Temporada 3" class="temporada-card__image">
+            <div class="temporada-card__caption">
+              <h2 class="temporada-card__title">Temporada 3</h2>
+              <p class="temporada-card__meta">2009–2010 · 22 episodios</p>
+            </div>
+          </div>
+          <div class="temporada-card__back">
+            <p class="temporada-card__title">Temporada 3</p>
+            <p class="temporada-card__meta">2009–2010 · 22 episodios</p>
+            <p class="temporada-card__description">El grupo comienza una nueva etapa después de terminar el colegio, enfrentándose a nuevos vínculos, conflictos y responsabilidades fuera de Constance y St. Jude's.</p>
+          </div>
+        </div>
+        <button class="fav-btn" data-id="temporada-3" data-tipo="Temporada" data-nombre="Temporada 3" data-img="img/temp3.jpg" aria-label="Agregar a favoritos">♡</button>
+      </div>
+
+      <div class="temporada-card" tabindex="0">
+        <div class="temporada-card__inner">
+          <div class="temporada-card__front">
+            <img src="img/temp4.png" alt="Temporada 4" class="temporada-card__image">
+            <div class="temporada-card__caption">
+              <h2 class="temporada-card__title">Temporada 4</h2>
+              <p class="temporada-card__meta">2010–2011 · 22 episodios</p>
+            </div>
+          </div>
+          <div class="temporada-card__back">
+            <p class="temporada-card__title">Temporada 4</p>
+            <p class="temporada-card__meta">2010–2011 · 22 episodios</p>
+            <p class="temporada-card__description">La llegada de nuevos personajes, relaciones y secretos transforma nuevamente la dinámica del grupo mientras sus vidas comienzan a tomar caminos diferentes.</p>
+          </div>
+        </div>
+        <button class="fav-btn" data-id="temporada-4" data-tipo="Temporada" data-nombre="Temporada 4" data-img="img/temp4.png" aria-label="Agregar a favoritos">♡</button>
+      </div>
+
+      <div class="temporada-card" tabindex="0">
+        <div class="temporada-card__inner">
+          <div class="temporada-card__front">
+            <img src="img/temp5.jpg" alt="Temporada 5" class="temporada-card__image">
+            <div class="temporada-card__caption">
+              <h2 class="temporada-card__title">Temporada 5</h2>
+              <p class="temporada-card__meta">2011–2012 · 24 episodios</p>
+            </div>
+          </div>
+          <div class="temporada-card__back">
+            <p class="temporada-card__title">Temporada 5</p>
+            <p class="temporada-card__meta">2011–2012 · 24 episodios</p>
+            <p class="temporada-card__description">Los protagonistas comienzan a tomar decisiones más adultas mientras sus relaciones se vuelven cada vez más complejas y los secretos tienen mayores consecuencias.</p>
+          </div>
+        </div>
+        <button class="fav-btn" data-id="temporada-5" data-tipo="Temporada" data-nombre="Temporada 5" data-img="img/temp5.jpg" aria-label="Agregar a favoritos">♡</button>
+      </div>
+
+      <div class="temporada-card" tabindex="0">
+        <div class="temporada-card__inner">
+          <div class="temporada-card__front">
+            <img src="img/temp6.jpg" alt="Temporada 6" class="temporada-card__image">
+            <div class="temporada-card__caption">
+              <h2 class="temporada-card__title">Temporada 6</h2>
+              <p class="temporada-card__meta">2012 · 10 episodios</p>
+            </div>
+          </div>
+          <div class="temporada-card__back">
+            <p class="temporada-card__title">Temporada 6</p>
+            <p class="temporada-card__meta">2012 · 10 episodios</p>
+            <p class="temporada-card__description">La última temporada conduce al cierre de las principales historias, romances y rivalidades, hasta llegar a la revelación definitiva de la identidad de Gossip Girl.</p>
+          </div>
+        </div>
+        <button class="fav-btn" data-id="temporada-6" data-tipo="Temporada" data-nombre="Temporada 6" data-img="img/temp6.jpg" aria-label="Agregar a favoritos">♡</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__line">&copy; 2026 Gossip Girl. Sitio realizado con fines académicos.</p>
+    <p class="footer__xoxo">XOXO</p>
+  </footer>
+  <script>
+  if (window.matchMedia("(hover: none)").matches) {
+    document.querySelectorAll(".temporada-card").forEach(card => {
+      card.addEventListener("click", () => card.classList.toggle("is-flipped"));
+    });
+  }
+</script>
+<script src="js/buscador.js"></script>
+<script src="js/favoritos.js"></script>
+</body>
+</html>

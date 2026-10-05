@@ -13,11 +13,11 @@
 </head>
 <body>
 
-  <!-- ============ HEADER (igual que la Home) ============ -->
-  <header class="header">
+
+ <header class="header">
     <div class="header__logo">
       <a href="index.html">
-        <img src="img/logo.jpg" alt="Gossip Girl" class="header__logo-img">
+        <img src="img/logo.png" alt="Gossip Girl" class="header__logo-img">
       </a>
     </div>
 
@@ -32,50 +32,27 @@
           <li><a href="galeria.html" class="nav__link">GALERÍA</a></li>
           <li><a href="contacto.html" class="nav__link">CONTACTO</a></li>
         </ul>
-
-        <a href="#" class="nav__favorite" aria-label="Favoritos">&#9825;</a>
       </nav>
+    </div>
+
+    <div class="nav__tools">
+      <div class="buscador">
+        <input type="text" id="buscar" class="buscador__input" placeholder="Buscar..." autocomplete="off">
+        <ul id="resultados" class="buscador__resultados"></ul>
+      </div>
+      <a href="#" class="nav__favorite" aria-label="Favoritos">&#9825;</a>
     </div>
   </header>
 
-  <!-- ============ HISTORIA - CONTENIDO PRINCIPAL ============ -->
-  <main class="historia-page">
+<main class="historia-page page-base">
     <div class="historia-container">
       <div class="historia-grid">
 
         <!-- COLUMNA IZQUIERDA -->
         <div class="historia-grid__col historia-grid__col--left">
 
-          <!-- Línea de tiempo -->
-          <div class="timeline">
-            <div class="timeline__track">
-              <div class="timeline__item">
-                <span class="timeline__year">2002</span>
-                <span class="timeline__dot"></span>
-                <span class="timeline__label">Nace Gossip Girl</span>
-              </div>
-              <div class="timeline__item">
-                <span class="timeline__year">2007</span>
-                <span class="timeline__dot"></span>
-                <span class="timeline__label">Llega a la televisión</span>
-              </div>
-              <div class="timeline__item">
-                <span class="timeline__year">2012</span>
-                <span class="timeline__dot"></span>
-                <span class="timeline__label">Final de la serie</span>
-              </div>
-            </div>
-            <p class="timeline__note">Suceden las seis temporadas</p>
-          </div>
-
           <!-- Imagen del elenco -->
           <img src="img/segunda-pag.jpg" alt="Elenco de Gossip Girl" class="historia-imagen">
-
-          <!-- Botones -->
-          <div class="historia-links">
-            <a href="temporadas.html" class="btn">Temporadas</a>
-            <a href="creadores.html" class="btn">Creadores y producción</a>
-          </div>
 
         </div>
 
@@ -95,13 +72,63 @@
 
       </div>
     </div>
+
+    <section class="historia-diagonal">
+
+      <span class="historia-diagonal__line" aria-hidden="true"></span>
+
+      <div class="historia-diagonal__milestone historia-diagonal__milestone--1">
+        <span class="historia-diagonal__year">2002</span>
+        <span class="historia-diagonal__label">Nace Gossip Girl</span>
+      </div>
+
+      <div class="historia-diagonal__milestone historia-diagonal__milestone--2">
+        <span class="historia-diagonal__year">2007</span>
+        <span class="historia-diagonal__label">Llega a la televisión</span>
+      </div>
+
+      <p class="historia-diagonal__note">Suceden las seis temporadas</p>
+
+      <div class="historia-diagonal__milestone historia-diagonal__milestone--3">
+        <span class="historia-diagonal__year">2012</span>
+        <span class="historia-diagonal__label">Final de la serie</span>
+      </div>
+
+      <span class="historia-diagonal__line" aria-hidden="true"></span>
+
+<span class="historia-diagonal__tick historia-diagonal__tick--1" aria-hidden="true"></span>
+<span class="historia-diagonal__tick historia-diagonal__tick--2" aria-hidden="true"></span>
+<span class="historia-diagonal__tick historia-diagonal__tick--3" aria-hidden="true"></span>
+
+      <img src="img/taco.png" alt="" class="historia-diagonal__deco historia-diagonal__deco--taco" aria-hidden="true">
+      <img src="img/corona.png" alt="" class="historia-diagonal__deco historia-diagonal__deco--corona" aria-hidden="true">
+      <img src="img/beso.png" alt="" class="historia-diagonal__deco historia-diagonal__deco--labios" aria-hidden="true">
+      <img src="img/diamante.png" alt="" class="historia-diagonal__deco historia-diagonal__deco--diamante" aria-hidden="true">
+      <img src="img/antifaz.png" alt="" class="historia-diagonal__deco historia-diagonal__deco--mascara" aria-hidden="true">
+
+    </section>
+
+
+    <div class="historia-flip-wrap">
+      <div class="temporada-flip-card" tabindex="0">
+        <div class="temporada-flip-card__inner">
+          <div class="temporada-flip-card__front">
+            <p class="temporada-flip-card__title">Temporadas</p>
+          </div>
+          <div class="temporada-flip-card__back">
+            <a href="temporadas.html" class="temporada-flip-card__button">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 
-  <!-- ============ FOOTER (igual que la Home) ============ -->
   <footer class="footer">
-    <p class="footer__line">&copy; 2026 Gossip Girl. Sitio realizado con fines académicos.</p>
+    <p class="footer__line">&copy; 2026 Gossip Girl. Sitio realizado por Sol Arguilea con fines académicos.</p>
     <p class="footer__xoxo">XOXO</p>
   </footer>
-
+<script src="js/buscador.js"></script>
+<script src="js/favoritos.js"></script>
 </body>
 </html>
